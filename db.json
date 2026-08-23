@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 2499,
+      "stock": 16,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "sales": 120,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Running Shoes",
+      "category": "Footwear",
+      "price": 3299,
+      "stock": 8,
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "sales": 95
+    },
+    {
+      "name": "Smart Watch",
+      "category": "Electronics",
+      "price": 5001,
+      "stock": 0,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "id": "3",
+      "sales": 80
+    },
+    {
+      "name": "Lipstick",
+      "category": "Accessories",
+      "price": 800,
+      "stock": 15,
+      "rating": 4.7,
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/026/704/479/small/red-lipstick-on-dark-background-generative-ai-photo.jpg",
+      "sales": 0,
+      "id": "4"
+    },
+    {
+      "name": "lipbalm",
+      "category": "Accessories",
+      "price": 299,
+      "stock": 20,
+      "rating": 4.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJnimUWjlvGZ8Xa_QyVvNEqGzV_sPmCaKr5XDIV4osQ&s=10",
+      "sales": 0,
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": "1001",
+      "customer": "John",
+      "date": "2026-08-05",
+      "status": "Delivered",
+      "total": 5499,
+      "items": 3
+    },
+    {
+      "id": "1002",
+      "customer": "Sarah",
+      "date": "2026-08-10",
+      "status": "Pending",
+      "total": 3299,
+      "items": 1
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,16 @@
+body {
+  background-color: #fff;
+  margin: 0;
+}
+.navbar {
+  min-height: 64px;
+}
+.navbar-brand {
+  letter-spacing: 0.3px;
+}
+.nav-link {
+  transition: 0.2s;
+}
+.nav-link:hover {
+  color: #ffc107 !important;
+}
