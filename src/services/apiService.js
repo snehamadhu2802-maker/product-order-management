@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://product-order-management-api.onrender.com";
+
 export const getProducts = () => {
   return axios.get(`${API_URL}/products`);
 };
@@ -13,21 +14,18 @@ export const getProductById = (id) => {
 export const addProduct = async (product) => {
   const response = await axios.get(`${API_URL}/products`);
   const products = response.data;
+
   const maxId = products.reduce((max, item) => {
     const id = Number(item.id);
     return id > max ? id : max;
   }, 0);
 
-  // Next ID
   const nextId = maxId + 1;
-
-  //Add product
   return axios.post(`${API_URL}/products`, {
     ...product,
-    id: nextId
+    id: nextId,
   });
 };
-
 export const updateProduct = (id, product) => {
   return axios.put(`${API_URL}/products/${id}`, product);
 };
